@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* flex-wrap: wrap; */
+}
+
+input, textarea, button {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    color: #F9FAF8;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+ul {
+    display: flex;
+    gap: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.header a,
+.hero p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header,
+.hero {
+    background-color: #1F2937;
+    display: flex;
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 5rem;
+}
+
+.hero {
+    padding: 5rem 5rem;
+    gap: 2rem 5rem;
+    justify-content: center;
+    align-items: top;
+    flex-wrap: wrap;
+}
+
+.hero-left {
+    flex-basis: 40%;
+    flex-grow: 0;
+    align-self: center;
+}
+
+@media only screen and (max-width: 1432px) {
+    .hero-left {
+        text-align: center;
+    }   
+}
+
+.hero-left > *{
+    margin-bottom: 1rem;
+}
+
+.sign-up-button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 10% / 30%;
+}
+
+
+.hero-right {
+    flex-shrink: 1;
+}
+
+.hero img {
+    border-radius: 5%;
+    min-width: 0;
+    width: 100%;
+    height: 500px;
+    /* object-fit: scale-down; */
+    object-fit: cover;
+}
+
+.info-title {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    margin: 3rem;
+    
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.info-container img {
+    padding: 4rem 3rem;
+    border-radius: 10%;
+    border: solid #3882F6;
+    margin-bottom: 1rem;
+}
+
+.info {
+    max-width: 200px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.info .text {
+    color: gray;
+}
+
